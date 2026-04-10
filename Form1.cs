@@ -172,9 +172,9 @@ namespace CRUDMahasiswaADO
                     return;
                 }
                 string query = @"INSERT INTO Mahasiswa
-                             (NIM, Nama, JenisKelamin, Tanggallahir, Alamat, KodeProdi, TanggalaDaftar)
+                             (NIM, Nama, JenisKelamin, Tanggallahir, Alamat, KodeProdi, TanggalDaftar)
                              VALUES
-                             (@NIM, @Nama, @JK, @Tanggallahir, @Alamat, @KodeProdi, @TanggalaDaftar)";
+                             (@NIM, @Nama, @JK, @Tanggallahir, @Alamat, @KodeProdi, @TanggalDaftar)";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
 
@@ -184,7 +184,7 @@ namespace CRUDMahasiswaADO
                 cmd.Parameters.AddWithValue("@Tanggallahir", dtpTanggalLahirr.Value.Date);
                 cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text);
                 cmd.Parameters.AddWithValue("@KodeProdi", txtKodeProdi.Text);
-                cmd.Parameters.AddWithValue("@TanggalaDaftar", DateTime.Now);
+                cmd.Parameters.AddWithValue("@TanggalDaftar", DateTime.Now);
 
                 int result = cmd.ExecuteNonQuery();
 
