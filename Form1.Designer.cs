@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNIM = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNama = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cmbJK = new System.Windows.Forms.ComboBox();
+            this.dtpTanggalLahir = new System.Windows.Forms.Label();
+            this.dtpTanggalLahirr = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAlamat = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txtKodeProdi = new System.Windows.Forms.TextBox();
+            this.ConnectDatabase = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -58,12 +58,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "NIM";
             // 
-            // textBox1
+            // txtNIM
             // 
-            this.textBox1.Location = new System.Drawing.Point(221, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(314, 26);
-            this.textBox1.TabIndex = 1;
+            this.txtNIM.Location = new System.Drawing.Point(221, 33);
+            this.txtNIM.Name = "txtNIM";
+            this.txtNIM.Size = new System.Drawing.Size(314, 26);
+            this.txtNIM.TabIndex = 1;
             // 
             // label2
             // 
@@ -74,12 +74,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Nama";
             // 
-            // textBox2
+            // txtNama
             // 
-            this.textBox2.Location = new System.Drawing.Point(221, 65);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(314, 26);
-            this.textBox2.TabIndex = 3;
+            this.txtNama.Location = new System.Drawing.Point(221, 65);
+            this.txtNama.Name = "txtNama";
+            this.txtNama.Size = new System.Drawing.Size(314, 26);
+            this.txtNama.TabIndex = 3;
             // 
             // label3
             // 
@@ -91,30 +91,30 @@
             this.label3.Text = "Jenis Kelamin";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // comboBox1
+            // cmbJK
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(221, 98);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(127, 28);
-            this.comboBox1.TabIndex = 5;
+            this.cmbJK.FormattingEnabled = true;
+            this.cmbJK.Location = new System.Drawing.Point(221, 98);
+            this.cmbJK.Name = "cmbJK";
+            this.cmbJK.Size = new System.Drawing.Size(127, 28);
+            this.cmbJK.TabIndex = 5;
             // 
-            // label4
+            // dtpTanggalLahir
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 135);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Tanggal Lahir";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.dtpTanggalLahir.AutoSize = true;
+            this.dtpTanggalLahir.Location = new System.Drawing.Point(49, 135);
+            this.dtpTanggalLahir.Name = "dtpTanggalLahir";
+            this.dtpTanggalLahir.Size = new System.Drawing.Size(105, 20);
+            this.dtpTanggalLahir.TabIndex = 6;
+            this.dtpTanggalLahir.Text = "Tanggal Lahir";
+            this.dtpTanggalLahir.Click += new System.EventHandler(this.label4_Click);
             // 
-            // dateTimePicker1
+            // dtpTanggalLahirr
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(219, 135);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(316, 26);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtpTanggalLahirr.Location = new System.Drawing.Point(219, 135);
+            this.dtpTanggalLahirr.Name = "dtpTanggalLahirr";
+            this.dtpTanggalLahirr.Size = new System.Drawing.Size(316, 26);
+            this.dtpTanggalLahirr.TabIndex = 7;
             // 
             // label5
             // 
@@ -125,12 +125,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Alamat";
             // 
-            // textBox3
+            // txtAlamat
             // 
-            this.textBox3.Location = new System.Drawing.Point(219, 175);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(316, 26);
-            this.textBox3.TabIndex = 9;
+            this.txtAlamat.Location = new System.Drawing.Point(219, 175);
+            this.txtAlamat.Name = "txtAlamat";
+            this.txtAlamat.Size = new System.Drawing.Size(316, 26);
+            this.txtAlamat.TabIndex = 9;
             // 
             // label6
             // 
@@ -141,41 +141,43 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Kode Prodi";
             // 
-            // textBox4
+            // txtKodeProdi
             // 
-            this.textBox4.Location = new System.Drawing.Point(221, 212);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(314, 26);
-            this.textBox4.TabIndex = 11;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtKodeProdi.Location = new System.Drawing.Point(221, 212);
+            this.txtKodeProdi.Name = "txtKodeProdi";
+            this.txtKodeProdi.Size = new System.Drawing.Size(314, 26);
+            this.txtKodeProdi.TabIndex = 11;
+            this.txtKodeProdi.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // button2
+            // ConnectDatabase
             // 
-            this.button2.Location = new System.Drawing.Point(579, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(189, 26);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Membuka Koneksi";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ConnectDatabase.Location = new System.Drawing.Point(579, 33);
+            this.ConnectDatabase.Name = "ConnectDatabase";
+            this.ConnectDatabase.Size = new System.Drawing.Size(189, 26);
+            this.ConnectDatabase.TabIndex = 13;
+            this.ConnectDatabase.Text = "Membuka Koneksi";
+            this.ConnectDatabase.UseVisualStyleBackColor = true;
+            this.ConnectDatabase.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnLoad
             // 
-            this.button3.Location = new System.Drawing.Point(579, 78);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(189, 28);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Menampilkan Data";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnLoad.Location = new System.Drawing.Point(579, 78);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(189, 28);
+            this.btnLoad.TabIndex = 14;
+            this.btnLoad.Text = "Menampilkan Data";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnInsert
             // 
-            this.button4.Location = new System.Drawing.Point(579, 124);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(189, 31);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Menambah Data";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnInsert.Location = new System.Drawing.Point(579, 124);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(189, 31);
+            this.btnInsert.TabIndex = 15;
+            this.btnInsert.Text = "Menambah Data";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // dataGridView1
             // 
@@ -186,6 +188,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(776, 179);
             this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
@@ -195,6 +198,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Mengubah Data";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button5
             // 
@@ -214,23 +218,24 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.btnLoad);
+            this.Controls.Add(this.ConnectDatabase);
+            this.Controls.Add(this.txtKodeProdi);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtAlamat);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dtpTanggalLahirr);
+            this.Controls.Add(this.dtpTanggalLahir);
+            this.Controls.Add(this.cmbJK);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNama);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNIM);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -240,20 +245,20 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNIM;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNama;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cmbJK;
+        private System.Windows.Forms.Label dtpTanggalLahir;
+        private System.Windows.Forms.DateTimePicker dtpTanggalLahirr;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAlamat;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txtKodeProdi;
+        private System.Windows.Forms.Button ConnectDatabase;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
